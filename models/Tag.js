@@ -7,7 +7,8 @@ class Tag extends Model {}
 Tag.init(
   {
     tag_name: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
+      allowNull: false
     },
   },
   {
