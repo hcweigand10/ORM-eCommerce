@@ -10,25 +10,25 @@ class Product extends Model {}
 Product.init(
   {
     product_name: {
-      type: DataType.TEXT,
+      type: DataTypes.TEXT,
       allowsNull: false
     },
     price: {
-      type: DataType.DECIMAL,
+      type: DataTypes.DECIMAL,
       allowsNull: false,
       validates: {
         isDecimal: true
       }
     },
     stock: {
-      type: DataType.INTEGER,
+      type: DataTypes.INTEGER,
       allowsNull: false,
       validates: {
         isNumeric: true
       }
     },
     category_id: {
-      type: DataType.TEXT,
+      type: DataTypes.TEXT,
       allowsNull: false
     },
   },
