@@ -48,8 +48,8 @@ router.put("/:id", (req, res) => {
     },
   })
     .then((tag) => {
-      // find all associated products from tag *** HELP (do i even need this? still curious how to where: array.conatins)
-      res.json(tag)      //Product.findAll({ where: { tags: req.params.id } }));
+      // find all associated products from tag
+      res.json(tag)      
     })
     .catch((err) => {
       // console.log(err);
